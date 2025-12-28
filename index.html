@@ -108,7 +108,7 @@
 
         <!-- CTA -->
         <div class="hidden md:block">
-            <a href="#book" class="border border-white px-8 py-3 text-xs uppercase tracking-widest-luxury hover:bg-white hover:text-jet-black transition-all duration-300">
+            <a href="#book" data-book class="border border-white px-8 py-3 text-xs uppercase tracking-widest-luxury hover:bg-white hover:text-jet-black transition-all duration-300">
                 Book Now
             </a>
         </div>
@@ -128,7 +128,7 @@
         <a href="#services" class="mobile-link text-2xl font-serif text-white">Services</a>
         <a href="#testimonials" class="mobile-link text-2xl font-serif text-white">Reviews</a>
         <a href="#gallery" class="mobile-link text-2xl font-serif text-white">Gallery</a>
-        <a href="#book" class="mobile-link text-xl uppercase tracking-widest border border-white px-8 py-3 mt-4">Book Now</a>
+        <a href="#book" data-book class="mobile-link text-xl uppercase tracking-widest border border-white px-8 py-3 mt-4">Book Now</a>
         <button id="close-menu-btn" class="absolute top-8 right-6 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="square" stroke-linejoin="miter" d="M6 18L18 6M6 6l12 12" />
@@ -143,7 +143,7 @@
             <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl text-white mb-10 leading-tight">
                 Elegance is <br /><span class="italic text-metallic-silver">an Attitude</span>
             </h1>
-            <a href="#book" class="inline-block border border-white px-10 py-4 text-xs md:text-sm uppercase tracking-widest-luxury text-white hover:bg-white hover:text-black transition-all duration-500">
+            <a href="#book" data-book class="inline-block border border-white px-10 py-4 text-xs md:text-sm uppercase tracking-widest-luxury text-white hover:bg-white hover:text-black transition-all duration-500">
                 Book Your Experience
             </a>
         </div>
@@ -452,6 +452,15 @@
 
         revealElements.forEach(el => {
             revealObserver.observe(el);
+        });
+
+        // "Book" buttons - show Coming Soon popup
+        const bookButtons = document.querySelectorAll('[data-book]');
+        bookButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Coming Soon!');
+            });
         });
     </script>
 </body>

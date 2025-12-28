@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon 986</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@1,300&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FDFBF5; /* Warm Off-White/Cream */
+            color: #363434; /* Deep Earthy Charcoal */
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .font-script {
+            font-family: 'Allura', cursive;
+        }
+        .font-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .font-body {
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        .backdrop-blur-md {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="hover:underline">About</a>
+                    <a href="#gallery" class="hover:underline">Gallery</a>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-4xl font-heading">Salon 986</h1>
+                    <p class="font-script text-lg">est. 2017</p>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#craft" class="hover:underline">The Craft</a>
+                    <a href="#testimonials" class="hover:underline">Testimonials</a>
+                    <a href="#" class="hover:underline border border-gray-400 px-4 py-2">Connect</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Animation Styles -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-element {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+    </style>
+
+    <div class="container mx-auto px-4 text-center fade-in-element">
+        <h2 class="text-6xl md:text-8xl font-heading leading-tight">The Art of Hair.</h2>
+        <p class="font-script text-2xl md:text-3xl mt-4">Est. 2017</p>
+    </div>
+    
+    <div class="absolute bottom-0 left-0 w-full h-px bg-gray-300"></div>
+</header>
+
+    <!-- The Craft Section -->
+    <section id="craft" class="py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-6xl font-heading text-center mb-12">The Craft</h3>
+            <div class="space-y-4">
+                <!-- Accordion Item 1 -->
+                <div class="border-t border-gray-300 py-4">
+                    <button class="w-full flex justify-between items-center text-left text-2xl font-heading focus:outline-none">
+                        <span>Styling</span>
+                        <span class="transform transition-transform duration-300">+</span>
+                    </button>
+                    <div class="mt-4 text-lg hidden">
+                        <p>Service 1 - $100</p>
+                        <p>Service 2 - $150</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                <div class="border-t border-gray-300 py-4">
+                    <button class="w-full flex justify-between items-center text-left text-2xl font-heading focus:outline-none">
+                        <span>Color</span>
+                        <span class="transform transition-transform duration-300">+</span>
+                    </button>
+                    <div class="mt-4 text-lg hidden">
+                        <p>Service 1 - $200</p>
+                        <p>Service 2 - $250</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                <div class="border-t border-b border-gray-300 py-4">
+                    <button class="w-full flex justify-between items-center text-left text-2xl font-heading focus:outline-none">
+                        <span>Treatments</span>
+                        <span class="transform transition-transform duration-300">+</span>
+                    </button>
+                    <div class="mt-4 text-lg hidden">
+                        <p>Service 1 - $120</p>
+                        <p>Service 2 - $180</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-6xl font-heading text-center mb-12">Testimonials</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="border border-gray-200 p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Mikala Walters is a great stylist. She was able to fix my hair after a stylist at Beautiful Reaction over processed my hair and gave me a crooked cut. It was orange and breaking off so badly. I was so upset and scared to trust anyone with my hair after that BR disaster. I'm so happy to have finally found someone I trust with my long, dark hair."</p>
+                    <p class="font-bold">Sarah Mohr</p>
+                    <p class="text-sm text-gray-500">Local Guide · 62 reviews · 30 photos</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="border border-gray-200 p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Kelsey is amazing! I had a bad experience with my previous hairdresser and came in looking for a color correction. Kelsey was able to make my hair beautiful again and super natural looking by adding some highlights, lowlights and a root smudge. I would highly recommend this salon!"</p>
+                    <p class="font-bold">Christina H</p>
+                    <p class="text-sm text-gray-500">1 review</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="border border-gray-200 p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                    </div>
+                    <p class="mb-4">"I just moved here and had my hair done by Michelle Kemper. She did such a fabulous job! For the first time in a long time I felt comfortable enough to let my stylist go with her own vision with my long hair, and she exceeded all my expectations! My hair color and cut turned out awesome! Such a creative visionary and meticulous!"</p>
+                    <p class="font-bold">julianna clausen</p>
+                    <p class="text-sm text-gray-500">Local Guide · 22 reviews</p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="border border-gray-200 p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                    </div>
+                    <p class="mb-4">"This salon is beautifully decorated & has a great vibe! My 7 yr old son has received his last few haircuts from Michelle; she's wonderful with him & does a fantastic job dealing w/ his squirming in her chair!"</p>
+                    <p class="font-bold">Jenn Hoffman</p>
+                    <p class="text-sm text-gray-500">Local Guide · 86 reviews · 259 photos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-6xl font-heading text-center mb-12">Gallery</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgBLhD9yDMSQUxtjam8Ou1lODzvnZWOmH2guG1bucU3UguCJdynDpZVqfVMwsfIEAPChmRiMe9l14DCIBkjBAz67pqH_UkiSE2XhN3gLcJwk7qcFXjW0fn77fMiPXxKMiRdaRmfUd81loyk53XPlLY1mQWyWtWPPGapjlI5Cdce5KZo7oolzYbHp3lKrWA=w445-h670">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgAq0lMC4abS2pcowFvpLTa0RlXRBc1cutsmMOwf2SQN43754pjw1EMKscwYAbGOuWXUGdHCsPDJA8KuMTVF9-ru9HTg6U-MsWlfnFp40aQnrtX151mTQ9mhLADgCXZznFgkSonhnDKR9D66W37Co9RviWmRnrH1eBcHrANZsPrz9Q3vfa-GTVVWMiOM0c">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjCDRE5Dgc7VdxM0E_Vk2m5nV6jEvzSQFL7hdyNh_z-hKRpLhz5vysnzubydN2bpNzudotnICwrRc-chAvGTE2PwxEt3wb0aBExCAc1rhrYoag-ibfHjBUJk6N_g-VxKf1mCbx9tQjTPSw4kKMK_u6X3GACEMtlofK3x-hUyP4UrQK_runMzNnw_m6NBn8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+    <div class="container mx-auto px-4 text-center">
+        <div class="inline-flex space-x-8 mb-4">
+            <!-- Updated Instagram Icon -->
+            <a href="https://www.instagram.com/salon986_/" class="text-gray-500 hover:text-gray-800" target="_blank" rel="noopener">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="www.w3.org">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/p/Salon-986-100063654516945/" class="text-gray-500 hover:text-gray-800" target="_blank" rel="noopener">
+                <span class="sr-only">Facebook</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <p class="text-sm text-gray-500">&copy; 2025 Salon 986. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+        const accordionButtons = document.querySelectorAll('#craft button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span:last-child');
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.textContent = '-';
+                } else {
+                    content.classList.add('hidden');
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
